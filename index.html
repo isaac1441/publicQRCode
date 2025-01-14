@@ -3,22 +3,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>StephSUX</title>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
   
-  <title>Frontend Mentor | QR code component</title>
 
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: #D5E1EF;
+      margin: 0;             
+      padding: 0;               
+      width: 100vw;             
+      height: 100vh;            
+      box-sizing: border-box;   
+      display: flex;
+      justify-content: center;
+    }
+
+    .main-box{
+      background-color: #FFFFFF;
+      height: 500px;
+      width: 320px;
+      position: absolute;
+      top: 180px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 15px 15px #CDD8E6; 
+    }
+    .qr-box{
+      background-color: blue;
+      width: 90%;
+      /*cheight: 480px;*/
+      height: 290px;
+      border-radius: 10px;
+      background-image: url("./image-qr-code.png");
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+      margin: 15px 0px 15px 15px
+    }
+    .topbox{
+      font-family: 'Outfit', sans-serif;
+      font-size: 21.5px;
+      text-align: center; 
+      padding-inline: 25px;
+      margin: 10px 0px
+    }
+    .botbox{
+      font-family: 'Outfit', sans-serif;
+      color: #7E818A;
+      font-size: 15.5px; text-align: center; 
+      padding-inline: 30px;
+      margin: 10px 0px
+    }
+    
+
   </style>
 </head>
 <body>
-    <div class="wrapper">
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="main-box">
+      <div class="qr-box"></div>
+      <div class="topbox"><strong>Improve your front-end skills by building projects</strong></div>
+      <div class="botbox">Scan the QR code to visit frontend Mentor and take your coding skills to the next level</div>
     </div>
 </body>
 </html>
